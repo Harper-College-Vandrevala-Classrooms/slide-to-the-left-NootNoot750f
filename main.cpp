@@ -23,11 +23,11 @@ void array_shift_right(int array[], int size, int numberOfShifts) {
         return;
     }
     for (int i = 0; i < numberOfShifts; i++) {
-        int last = array[size - 1];  // Store the last element
-        for (int j = size - 1; j > 0; j--) { // Corrected loop
-            array[j] = array[j - 1];  // Shift elements to the right
+        int last = array[size - 1];
+        for (int j = size - 1; j > 0; j--) {
+            array[j] = array[j - 1];
         }
-        array[0] = last;  // Place the last element at the first position
+        array[0] = last; 
     }
 }
 void vector_shift(vector<int> &theVector, int numberOfShifts) {
