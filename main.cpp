@@ -23,11 +23,19 @@ void array_shift_right(int array[], int size, int numberOfShifts) {
         return;
     }
     for (int i = 0; i < numberOfShifts; i++) {
+<<<<<<< HEAD
         int last = array[size - 1];
         for (int j = size - 1; j > 0; j--) {
             array[j] = array[j - 1];
         }
         array[0] = last; 
+=======
+        int last = array[size - 1];  // 
+        for (int j = size - 1; j > 0; j--) { // 
+            array[j] = array[j - 1]; 
+        }
+        array[0] = last;  
+>>>>>>> 79e9ffbd62c590df5c0dba12f321d3ca43ca6c64
     }
 }
 void vector_shift(vector<int> &theVector, int numberOfShifts) {
